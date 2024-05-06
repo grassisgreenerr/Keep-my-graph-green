@@ -1,7 +1,7 @@
 name: Update time cron job
 on:
   schedule:
-    - cron: '13 09 * * *'
+    - cron: '13 13 * * *'
   workflow_dispatch:
 jobs:
   cron:
