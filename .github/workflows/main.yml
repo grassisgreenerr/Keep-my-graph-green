@@ -11,6 +11,11 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
+      - name: Configure Git author
+        run: |
+            git config user.name "grassisgreenerr"
+            git config user.email "75071915+grassisgreenerr@users.noreply.github.com"
+
       - name: Update date.txt
         run: date '+%Y-%m-%d %H:%M:%S' > date.txt
 
